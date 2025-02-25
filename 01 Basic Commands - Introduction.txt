@@ -1,0 +1,16 @@
+$ git-init 
+* Create an empty Git repository or reinitialize an existing one.
+-b <branch-name>: default branch name.
+
+$ git push origin main
+- origin: the remote name. refers to the GitHub copy of our repository. It was set up automatically.
+- main/master: refers to our default branch in the repository.
+- pull: Fetch from and integrate with another repository or a local branch.
+- push: Update remote refs along with associated objects.
+
+$ git branch -m main
+-m rename current branch.
+
+$ git remote add <name> <url>
+* Add a remote named <name> for the repository at <URL>.
+- <name> can then be used to create and update remote-tracking branches <name>/<branch>.
