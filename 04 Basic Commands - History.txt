@@ -1,0 +1,17 @@
+$ git log
+* --abbrev-commit: make commit identifiers shorter.
+* --oneline: show logs in a line.
+* --graph
+* --since="3 days ago"
+
+$ git log <id>...<id>
+*  show the commit history between two commits.
+
+$ git log -- <file>
+* show commits that involve the specific file.
+
+$ git log --follow -- <file>
+* Continue listing the history of a file beyond renames (works only for a single file).
+
+$ git show <commit-id>
+* is used to display detailed information about a specific commit.
