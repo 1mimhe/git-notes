@@ -1,0 +1,14 @@
+$ git reset HEAD <file>
+* it unstage files and doesn't change files.
+
+$ git checkout -- <file>
+* it discard changes.
+
+$ git add -u
+* it just stages all modified and deleted files in the working directory.
+
+$ git mv <source>…​ <destination>
+* move or rename a file or a directory.
+** First, rename and stage the file before making any changes (if necessary). This ensures Git tracks the renaming file correctly.
+*** if you rename without git command, git thinks the original file is deleted and a new file with the new name is created. You need to stage both the deletion of the old file and the addition of the new file. Git is smart enough to detect that this is a rename if the file content is similar.
+*** Git treats moves and renames the same way (renamed).
