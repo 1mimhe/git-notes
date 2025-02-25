@@ -1,0 +1,4 @@
+$ git config --global alias.<alias-name> "<command>"
+* we can make alias for git commands.
+* leaving out the 'git' part of command in <command>.
+=> $ git <alias>
