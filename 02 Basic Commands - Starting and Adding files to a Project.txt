@@ -1,0 +1,33 @@
+# Git Stages:
+Unstaged files (Working directory) -> Staged Files (Staging area/index => tracked files) -> Commited (Local Repository - .git directory) -> Remote Area
+
+1. git add
+2. git commit
+3. git push origin master
+
+* Initial commit -> root-commit
+
+## Starting a new project:
+# 1. Starting with a fresh project (no source yet):
+git init <project-name> -> git add -> git commit -> git remote add
+* Here, 'git init' creates a new directory and initializes an empty '.git' repository in it.
+$ git remote add origin <repo-url>
+
+# 2. Adding git to an existing project:
+git init -> git add . -> git commit -m "first commit"
+* Here, 'git init' initializes an empty '.git' repository in the current directory.
+
+# 3. Joining an existing remote project:
+git clone <Project-URL> ->
+
+* status: Your branch is up-to-date with 'origin/master' => master branch on the remote repostory (origin is a refer to the remote)
+
+## Adding files:
+git add . -> git commit -> git pull origin master -> git push origin master
+* Best practice: doing pull before push to sync (If we have multiple contributors on that repository)
+
+$ git commit -am <commit-message>
+* Add any changes into staging area and then commiting directly.
+
+$ git ls-files
+* Show information about files in the index (or staging area) and the working tree (unless they have been deleted or modified in a way that Git hasn't yet registered and the changes are unstaged).
