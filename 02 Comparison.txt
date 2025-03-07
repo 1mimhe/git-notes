@@ -1,0 +1,14 @@
+* HEAD => The last commit.
+* HEAD^ => The last minus one commit.
+
+$ git diff [[--staged] HEAD] [-- <filename>]
+* withou any flag and args => Shows unstaged changes (differences between the working directory and the staging area).
+* [HEAD] => Shows differences between the working directory and the last commit.
+* --staged HEAD => Shows differences between the staging area and the last commit.
+* -- <filename> => Only shows changes to the named file.
+
+$ git diff <commit-or-banrch> <commit-or-branch>
+* Shows differences between two commits or branches (at HEAD).
+
+$ git difftool [with git diff flags and args]
+* Show changes using common diff tools (If we configured that)
