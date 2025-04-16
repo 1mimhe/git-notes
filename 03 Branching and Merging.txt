@@ -1,0 +1,41 @@
+$ git branch <new>
+- create a new branch.
+
+$ git checkout <branch>
+$ git switch <branch>
+- switch to a branch.
+
+$ git branch [flags] 
+-a => lists all available branches.
+-m <branch-name> <new-branch-name> => rename (move) a branch.
+-d <branch-name> => delete a branch.
+
+$ git switch -c <new>
+$ git checkout -b <new>
+- create and switch to a new branch.
+
+$ git merge <branch-name>
+* <branch-name> => the source branch that I want merge it into my current (target) branch.
+
+* Branch Merges:
+** Fast Forward (default):
+- Git just placed all the commits on the target (e.g. master) branch.
+- is only possible when there are no changes being made on the target branch.
+** No Fast Forward (--no-ff):
+- Always creates a merge commit, even if a fast-forward is possible.
+- Useful when you want to keep the history of the merge.
+** Only Fast-Forward (--ff-only):
+- Git will only do the merge if it can be fast-forwarded.
+** Automatic Merges (If fast-forward is not possible):
+- It will need to create a merge commit to combine the two histories.
+- that brings two (or more) branches together.
+- It has two parent commits instead of one — one from each branch being merged.
+
+$ git merge <branch> -m <merge-commit-message>
+
+* Conflicts:
+- A merge conflict happens when Git can't automatically figure out how to combine changes from two branches — usually because the same lines in the same file were changed differently in both branches.
+- Git marks the conflict area.
+- We should resolve conflicts and do a manually edit conflict sections to keep what we want — maybe combine the changes, or pick one side (using mergetool or manually).
+- Then we commit the resolved conflicts.
+
