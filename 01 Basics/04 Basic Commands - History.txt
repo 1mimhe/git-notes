@@ -4,6 +4,9 @@ $ git log
 * --graph
 * --since="3 days ago"
 
+***
+$ git log --oneline --graph --decorate --all
+
 $ git log <id>...<id>
 *  show the commit history between two commits.
 

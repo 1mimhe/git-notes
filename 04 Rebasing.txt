@@ -1,0 +1,16 @@
+$ git rebase <source-branch>
+Consider what happens when you start working on a new feature in a dedicated branch,
+then another team member updates the main branch (the source branch) with new commits.
+This moves the entire feature branch to begin on the tip of the source branch,
+effectively incorporating all of the new commits in main.
+
+* If we have a rebasing conflict:
+** We can abort that rebase.
+$ git rebase --abort
+** or We can resolve the conflict and:
+$ git rebase --continue
+
+$ git pull --rebase origin master
+Pull with rebase. When we have some changes in remote,
+then our local changes are reapplied on top of the remote changes.
+
