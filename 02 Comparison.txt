@@ -7,8 +7,8 @@ $ git diff [[--staged] HEAD] [-- <filename>]
 * --staged HEAD => Shows differences between the staging area and the last commit.
 * -- <filename> => Only shows changes to the named file.
 
-$ git diff <commit-or-banrch> <commit-or-branch>
-* Shows differences between two commits or branches (at HEAD).
+$ git diff <diff-1> <diff-2>
+* Shows differences between two commits or branches (at HEAD) or tags.
 
 $ git difftool [with git diff flags and args]
 * Show changes using common diff tools (If we configured that)

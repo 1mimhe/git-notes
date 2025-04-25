@@ -29,5 +29,8 @@ git add . -> git commit -> git pull origin master -> git push origin master
 $ git commit -am <commit-message>
 * Add any changes into staging area and then commiting directly.
 
+$ git commit --amend
+* is used to modify the most recent commit in your Git repository.
+
 $ git ls-files
 * Show information about files in the index (or staging area) and the working tree (unless they have been deleted or modified in a way that Git hasn't yet registered and the changes are unstaged).
