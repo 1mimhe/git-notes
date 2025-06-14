@@ -1,0 +1,33 @@
+* Tags are ref's that point to specific points in Git history.
+* We can name a commit with the tag and use it at commands.
+
+$ git tag <tag-name> [specific-commit-id]
+* A lightweight tag.
+* Lightweight tags as private.
+* Lightweight tags are essentially 'bookmarks' to a commit, they are just a name and a pointer to a commit, useful for creating quick links to relevant commits.
+
+$ git tag -a <tag-name> [specific-commit-id]
+or
+$ git tag <tag-name> -m <tag-message>
+* A annotated tag.
+* Annotated tags as public.
+* Annotated tags store extra meta data such as: the tagger name, email, and date.
+* It also have a tag message.
+
+$ git tag --list
+* get list of tags.
+
+$ git tag --delete <tag-name>
+* delete a tag.
+
+$ git tag -a <tag-name> -f <commit-id>
+* It updates a tag.
+
+$ git push origin <tag-name>
+* Push a tag to GitHub.
+
+$ git push origin master --tags
+* Push all the local tags to GitHub.
+
+$ git push origin :<tag-name>
+* Delete a tag on GitHub.
